@@ -41,6 +41,7 @@ if (isset($_GET['delete'])) {
 
 
 <h2>Liste of Users</h2>
+<br>
 <div class="user-table">
     <table borders="1">
         <tr>
@@ -76,6 +77,6 @@ if (isset($_GET['delete'])) {
         ?>
     </table>
     <div class="add">
-    <a class="margin" href="user-add.php">Add new user</a>
+    <button><a class="margin" href="user-add.php">Add user</a> </button>
     </div>
 </div>

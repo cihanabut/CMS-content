@@ -201,3 +201,7 @@ h2 {
   text-align: center;
 }
 
+.user-table{
+  display: flex;
+  justify-content: center;
+}

@@ -11,7 +11,7 @@ if (!$conn) {
 }
 
 // la liste des posts depuis la base de données
-$query = "SELECT * FROM posts";
+$query = "SELECT * FROM posts WHERE date>2024 LIMIT 3";
 $result = mysqli_query($conn, $query);
 
 if (isset($_GET['delete'])) {
@@ -74,9 +74,9 @@ if (isset($_GET['delete'])) {
         }
         ?>
     </table>
-
+<br>
     <div class="add">
-    <a class= "margin" href="post-add.php">Add new post</a>
+    <button><a class= "margin" href="post-add.php">Add post</a></button>
     </div>
 </div>
 
