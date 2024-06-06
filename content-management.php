@@ -11,7 +11,7 @@ if (!$conn) {
 }
 
 // la liste des posts depuis la base de données
-$query = "SELECT * FROM posts WHERE date>2024 LIMIT 3";
+$query = "SELECT * FROM posts";
 $result = mysqli_query($conn, $query);
 
 if (isset($_GET['delete'])) {
